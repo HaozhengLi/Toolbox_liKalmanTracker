@@ -13,7 +13,7 @@ The filter actually mix these two states into one state, then it considers the m
 
 Now the key problem is:
 
-### In each step/frame, the size/count of measurement state and prediction state are not equal.
+#### In each step/frame, the size/count of measurement state and prediction state are not equal.
 
 For example, in (k-1)-th frame, we got N targets, which means we got N Kalman Filters. So we now have N prediction states.
 
@@ -33,26 +33,26 @@ Just open the project and run main.cpp, a multi-target Kalman tracking demo will
 
 All you need to do is as followed:
 
-### 1) Initialize a liKalmanTracker
+#### 1) Initialize a liKalmanTracker
 
 API: liKalmanTracker(float targetSize_0 = 60, string targetName_0 = "target");
 
-### 2) Feed it with measurement sequence which is detected by your classifier or other algorithm
+#### 2) Feed it with measurement sequence which is detected by your classifier or other algorithm
 
 API: tracker.track(measurement);
 
-### 3) Print or show the result image, or directly get the tracking sequence
+#### 3) Print or show the result image, or directly get the tracking sequence
 
 APIs: tracker.print(nFrameCount); tracker.show(dst_tracking, 0); vector<Point2f> trackment();
 
 ## 2 What does liKalmanTracker do?
 As a result, liKalmanTracker deal with several problems in multi-target Kalman tracking as followed:
 
-### 1) When new targets appear, M will increase, how to match them with N? (M > N)
+#### 1) When new targets appear, M will increase, how to match them with N? (M > N)
 
-### 2) When targets leave, M will decreased, how to match them with N? (M < N)
+#### 2) When targets leave, M will decreased, how to match them with N? (M < N)
 
-### 3) Even if M == N, how to deal with false detected targets?
+#### 3) Even if M == N, how to deal with false detected targets?
 
 In one word, <liKalmanTracker> deal with false-rejected and false-accepted problems in multi-target Kalman tracking problem.
   
@@ -70,7 +70,7 @@ Another example, if one target can not be detected by the classifier or other al
 
 As a result, I manage to build such a model to let liKalmanTracker decise which target should be tracked.
 
-### 1) M > N
+#### 1) M > N
 
 It means new targets appear.
 
@@ -80,7 +80,7 @@ Extend and initialize (M - N) new Kalman Filters, confidence = 0.
 
 Now M == N, cool!
 
-### 2) M < N
+#### 2) M < N
 
 It means targets is leaving or false rejected.
 
@@ -90,11 +90,11 @@ Extend (N - M) measurement with N's prediction states, but confidence decrease.
 
 Now M == N, cool!
 
-### 3) M == N
+#### 3) M == N
 
 It means M match N, cool!
 
-### 4)/0) Opps! Wait! From 1) to 3), false accepted may occur!
+#### 4)/0) Opps! Wait! From 1) to 3), false accepted may occur!
 
 So before 1) to 3), firstly we must deal with false accepted problem.
 
@@ -110,7 +110,8 @@ Sure!
 
 If you want to know more details about the multi-target Kalman traking algorithm, or want to know more about my work,
 
-### please read the pdf paper <Video monitoring method of escalator entrance area based on Adaboost and codebook model> in this project.
+#### please read the pdf paper <Video monitoring method of escalator entrance area based on Adaboost and codebook model> in this project.
 
-# Have fun!!
+
+# Have fun!! :)
 
