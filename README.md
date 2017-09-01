@@ -104,7 +104,7 @@ So now make 4) as 0). Finish it before step 1).
 
 After all of these step, M measurement states can match N prediction states, and all the Kalman Filters will work well.
 
-![image](https://github.com/HaozhengLi/Toolbox_liKalmanTracker.git/result/result.gif)
+![image](https://github.com/HaozhengLi/Toolbox_liKalmanTracker/blob/master/result/result.gif)
 
 ## 3 Does liKalmanFilter work well?
 
@@ -113,7 +113,6 @@ Sure!
 If you want to know more details about the multi-target Kalman traking algorithm, or want to know more about my work,
 
 #### please read the pdf paper "Video monitoring method of escalator entrance area based on Adaboost and codebook model" in this project.
-
 
 # Have fun!! :)
 
