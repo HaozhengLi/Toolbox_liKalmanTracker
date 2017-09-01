@@ -104,11 +104,15 @@ So now make 4) as 0). Finish it before step 1).
 
 After all of these step, M measurement states can match N prediction states, and all the Kalman Filters will work well.
 
-![image](https://github.com/HaozhengLi/Toolbox_liKalmanTracker/blob/master/result/result.gif)
-
 ## 3 Does liKalmanFilter work well?
 
 Sure!
+
+You can run the demo and get result as the gif below, the liKalmanTracker is tracking 4 targets.
+
+![image](https://github.com/HaozhengLi/Toolbox_liKalmanTracker/blob/master/result/result.gif)
+
+The white rectangle is the ROI, when targets leave the ROI, they will not be detected.
 
 If you want to know more details about the multi-target Kalman traking algorithm, or want to know more about my work,
 
