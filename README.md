@@ -1,7 +1,7 @@
 # liKalmanTracker
 A toolbox using OpenCV 2.4.9 to do point multi-target Kalman tracking.
 
-Author: Haozheng Li
+Author: Haozheng Li 
 Email: sai-2008@qq.com or akaHaozhengLi@gmail.com
 
 ## 0 Why we need liKalmanTracker?
