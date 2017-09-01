@@ -21,7 +21,7 @@ Suppose in k-th frame, we have detected/measured M targets(M != N), then these M
 
 The result of that is the Kalman Filter iteration can not continue.
 
-That's why <liKalmanTracker> is here.
+That's why "liKalmanTracker" is here.
   
 ## 1 How to use liKalmanTracker?
 
@@ -35,7 +35,7 @@ All you need to do is as followed:
 
 #### 1) Initialize a liKalmanTracker
 
-API: liKalmanTracker(float targetSize_0 = 60, string targetName_0 = "target");
+API: liKalmanTracker(targetSize, targetName);
 
 #### 2) Feed it with measurement sequence which is detected by your classifier or other algorithm
 
@@ -43,7 +43,7 @@ API: tracker.track(measurement);
 
 #### 3) Print or show the result image, or directly get the tracking sequence
 
-APIs: tracker.print(nFrameCount); tracker.show(dst_tracking, 0); vector<Point2f> trackment();
+APIs: tracker.print(nFrameCount); tracker.show(dst_tracking, 0); tracker.trackment();
 
 ## 2 What does liKalmanTracker do?
 As a result, liKalmanTracker deal with several problems in multi-target Kalman tracking as followed:
@@ -110,7 +110,7 @@ Sure!
 
 If you want to know more details about the multi-target Kalman traking algorithm, or want to know more about my work,
 
-#### please read the pdf paper <Video monitoring method of escalator entrance area based on Adaboost and codebook model> in this project.
+#### please read the pdf paper "Video monitoring method of escalator entrance area based on Adaboost and codebook model" in this project.
 
 
 # Have fun!! :)
