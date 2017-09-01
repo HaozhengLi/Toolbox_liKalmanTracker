@@ -104,7 +104,7 @@ So now make 4) as 0). Finish it before step 1).
 
 After all of these step, M measurement states can match N prediction states, and all the Kalman Filters will work well.
 
-![image](Toolbox_liKalmanTracker/result/result.gif)
+![image](https://github.com/HaozhengLi/Toolbox_liKalmanTracker.git/result/result.gif)
 
 ## 3 Does liKalmanFilter work well?
 
