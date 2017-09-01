@@ -58,7 +58,7 @@ In one word, <liKalmanTracker> deal with false-rejected and false-accepted probl
   
 It will automatically match measurement states and prediction states, mix them and output the optimal estimate of targets' position.
 
-## 2 How does liKalmanTracker work?
+## 3 How does liKalmanTracker work?
 
 I build a confidence model for all targets.
 
@@ -104,7 +104,7 @@ So now make 4) as 0). Finish it before step 1).
 
 After all of these step, M measurement states can match N prediction states, and all the Kalman Filters will work well.
 
-## 3 Does liKalmanFilter work well?
+## 4 Does liKalmanFilter work well?
 
 Sure!
 
