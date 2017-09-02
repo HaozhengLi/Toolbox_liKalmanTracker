@@ -5,6 +5,7 @@
 #### Email: sai-2008@qq.com or akaHaozhengLi@gmail.com
 
 ## 0 Why we need liKalmanTracker?
+
 It's hard to do multi-target Kalman tracking in OpenCV because it only provides a single-target version.
 
 All of us know the process of Kalman tracking, it needs a measurement state and a prediction state in each iteration.
@@ -46,6 +47,7 @@ API: tracker.track(measurement);
 APIs: tracker.print(nFrameCount); tracker.show(dst_tracking, 0); tracker.trackment();
 
 ## 2 What does liKalmanTracker do?
+
 As a result, liKalmanTracker deal with several problems in multi-target Kalman tracking as followed:
 
 #### 1) When new targets appear, M will increase, how to match them with N? (M > N)
