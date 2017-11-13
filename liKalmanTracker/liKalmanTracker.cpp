@@ -261,7 +261,7 @@ Mat liKalmanTracker::show(Mat src, int type_0)
 	{
 		target[i].trajectory.push_back(target[i].position());
 		if (target[i].trajectory.size() > 500)
-			target[i].trajectory.pop_back();
+			target[i].trajectory.erase(target[i].trajectory.begin());
 
 		vector<Point2f>::const_iterator pt = target[i].trajectory.end() - 1;
 		Scalar color = colorTabel(target[i].id);

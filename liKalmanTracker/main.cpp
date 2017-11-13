@@ -5,8 +5,8 @@
 /*  Author: Haozheng Li										*/
 /*  EMail: 466739850@qq.com									*/
 /*  Created Time: 2017.5.25									*/
-/*  Last Revised: 2017.9.1									*/
-/*  Version: v1.0.3											*/
+/*  Last Revised: 2017.11.13								*/
+/*  Version: v1.0.4											*/
 /************************************************************/
 
 #include "liFunction.h"
